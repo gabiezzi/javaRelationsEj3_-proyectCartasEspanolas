@@ -40,7 +40,7 @@ public class CartaEntidad {
 
     @Override
     public String toString() {
-        return "Carta [" + palo + " , " + numero + ']';
+        return "Carta [" + numero + " , " + palo + ']';
     }
     
     

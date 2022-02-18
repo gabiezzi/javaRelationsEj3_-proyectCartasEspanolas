@@ -5,10 +5,22 @@
  */
 package implement;
 
+import entity.CartaEntidad;
+
 /**
  *
  * @author Gabi
  */
 public class CartaImplementService {
+    
+    
+    public CartaEntidad nuevaCarta(String palo, int num){
+        
+        
+        
+        
+        return new CartaEntidad(palo, num);
+        
+    }
     
 }

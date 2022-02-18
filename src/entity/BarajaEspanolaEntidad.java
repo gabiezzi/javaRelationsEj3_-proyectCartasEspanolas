@@ -5,7 +5,7 @@
  */
 package entity;
 
-import java.util.Set;
+import java.util.LinkedHashSet;
 
 /**
  *
@@ -13,7 +13,29 @@ import java.util.Set;
  */
 public class BarajaEspanolaEntidad {
     
-    Set<CartaEntidad> cartasEspanolas;
+    LinkedHashSet<CartaEntidad> cartasEspanolas;
+
+    public BarajaEspanolaEntidad(LinkedHashSet<CartaEntidad> cartasEspanolas) {
+        this.cartasEspanolas = cartasEspanolas;
+    }
+
+    public BarajaEspanolaEntidad() {
+    }
+
+    public LinkedHashSet<CartaEntidad> getCartasEspanolas() {
+        return cartasEspanolas;
+    }
+
+    public void setCartasEspanolas(LinkedHashSet<CartaEntidad> cartasEspanolas) {
+        this.cartasEspanolas = cartasEspanolas;
+    }
+
+    @Override
+    public String toString() {
+        return "BarajaEspanolaEntidad{" + "cartasEspanolas=" + cartasEspanolas + '}';
+    }
+    
+    
     
     
     

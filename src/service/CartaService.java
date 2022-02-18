@@ -14,7 +14,7 @@ import entity.CartaEntidad;
 public interface CartaService {
     
     
-    public CartaEntidad nuevaCarta();
+    public CartaEntidad nuevaCarta(String palo, int num);
     
     
     
