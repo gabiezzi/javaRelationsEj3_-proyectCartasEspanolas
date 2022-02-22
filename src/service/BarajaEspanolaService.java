@@ -19,6 +19,8 @@ y luego se llama al método, este no mostrara esa primera carta.
 package service;
 
 import entity.BarajaEspanolaEntidad;
+import entity.CartaEntidad;
+import java.util.LinkedHashSet;
 
 /**
  *
@@ -28,14 +30,19 @@ public interface BarajaEspanolaService {
 
     public BarajaEspanolaEntidad crearBarajaEspanola();
 
+    public BarajaEspanolaEntidad crearMonton();
+
     public String barajar(BarajaEspanolaEntidad nuevaBaraja);
-    //    public String siguienteCarta();
-    public String cartasDisponibles(BarajaEspanolaEntidad nuevaBaraja) ; 
-//    public String darCartas();
-    
-    //    public String cartasMonton();
 
+    public String cartasDisponibles(LinkedHashSet<CartaEntidad> cartasEspanolas);
 
-    public String mostrarCartas(BarajaEspanolaEntidad nuevaBaraja);
+    public String darCartas(int cartasPedidas, LinkedHashSet<CartaEntidad> cartasEspanolas, LinkedHashSet<CartaEntidad> cartasMonton);
 
+    public String mostrarCartas(LinkedHashSet<CartaEntidad> cartasEspanolas);
+
+    public String cartasMonton(LinkedHashSet<CartaEntidad> cartasMonton);
+
+    public String siguienteCarta(LinkedHashSet<CartaEntidad> cartasEspanolas, LinkedHashSet<CartaEntidad> cartasMonton);
+
+    public void menu();
 }

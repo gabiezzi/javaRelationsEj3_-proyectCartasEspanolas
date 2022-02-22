@@ -20,6 +20,9 @@ public class BarajaEspanolaEntidad {
     }
 
     public BarajaEspanolaEntidad() {
+        
+        this.cartasEspanolas = cartasEspanolas;
+        
     }
 
     public LinkedHashSet<CartaEntidad> getCartasEspanolas() {
